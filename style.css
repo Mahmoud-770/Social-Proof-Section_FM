@@ -1,0 +1,115 @@
+/* * * * * S T A R T - G L O B A L - S T Y L E * * * * */
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+    text-align: left;
+}
+body{font-family: 'League Spartan', sans-serif;}
+/* * * * * E N D - G L O B A L - S T Y L E * * * * */
+
+
+/* * * * * S T A R T - T E X T - P A R T * * * * */
+.landing{
+    margin: auto;
+    padding: 100px;
+}
+.landing .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .txt{width: 36%;}
+.content .txt h1{
+    font-size: 50px;
+    color: hsl(300, 43%, 22%);
+}
+.content .txt p{
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 20px;
+    color: hsl(303, 10%, 53%)
+}
+@media (max-width:1000px){
+    .landing{padding: 100px 25px;}
+    .content{flex-direction: column;}
+    .content .txt{width: auto;}
+    .txt h1,.txt p{text-align: center;}
+}
+/* * * * * * E N D - T E X T - P A R T * * * * */
+
+
+/* * * * * * S T A R T - R A T I N G - P A R T * * * * */
+.content .rate section{
+    width: 425px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsl(300, 24%, 96%);
+}
+.rate section:nth-child(1){transform: translateX(-140px);}
+.rate section:nth-child(2){transform: translateX(-65px);}
+.rate section p{
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+@media (max-width:1000px){
+    .content .rate{margin-top: 50px;}
+    .content .rate section{
+        width: 335px;
+        transform: none;
+        flex-direction: column;
+    }
+    .rate section p{margin-top: 10px;}
+}
+/* * * * * * E N D - R A T I N G - P A R T * * * * */
+
+
+/* * * * * * S T A R T - C A R D S - P A R T * * * * */
+.cards{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 32%;
+    padding: 35px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(300, 43%, 22%);
+}
+.card:nth-child(2){transform: translatey(20px);}
+.card:nth-child(3){transform: translatey(40px);}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.img1,.img2,.img3{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-size: cover;
+    border: 2px solid hsl(333, 80%, 67%);
+}
+.img1{background-image: url(images/image-colton.jpg);}
+.img2{background-image: url(images/image-irene.jpg);}
+.img3{background-image: url(images/image-anne.jpg);}
+.txt h6{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+.card p{
+    font-size: 18px;
+    line-height: 20px;
+}
+@media (max-width:1000px){
+    .cards{flex-direction: column;}
+    .card{width: auto;transform: none;}
+}
+/* * * * * * E N D - C A R D S - P A R T * * * * */
